@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\Contents\orders.json" />
+    <Content Include="bin\Debug\net8.0\SpeedyAir.ConsoleApp.deps.json" />
+    <Content Include="bin\Debug\net8.0\SpeedyAir.ConsoleApp.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.ConsoleApp.dll" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.ConsoleApp.exe" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.ConsoleApp.pdb" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.Models.dll" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.Models.pdb" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.Services.dll" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.Services.pdb" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.Utilities.dll" />
+    <None Include="bin\Debug\net8.0\SpeedyAir.Utilities.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpeedyAir.Services\SpeedyAir.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Contents\orders.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
